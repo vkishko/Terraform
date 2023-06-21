@@ -15,7 +15,8 @@ provider "aws" {
 
 resource "aws_key_pair" "example" {
   key_name   = "example-keypair"
-  public_key = file("~/.ssh/id_rsa.pub")  # Replace with the path to your public key file
+  public_key = file("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3uPBcs3WH+GalbWR98K6dGSI7SloFYDCCwTCjITCrfWHORNm0A+eNvSNBH+bpr39UvZTxg3rBfdqhAcJDxcWOC6WyXuyFVrROzgkCstgOAz8NnNztqq1vbb59PgTsyC6c3iaY3cCwgzpgKCgV9P7Z/MAC2b5g9KF82yGJzIvlXrdFBCQNqMSJvKlNJ9ujDKsLq67FDpMqKNNgih8tuX207k8Y4zen3UIS0Sos4v8MLeQYxW7a8DOwfNOdfyziwkMA/2Xzpqcmrk0S/JvdBiQ5+gQzQQsGtOFRSdG3fCI5nxjXmlbay1mwADzwoc6y+Gk/Rx4/kLqujP6kjWqg1PphM+BuuIXzffX+zyQ2NDhgwu/u9OaTEiMH3GRVv8MLHx+325g4ZjCvCEQqqqUZjXy5yJP4shkNDKAiXkDCl6LoodBIVUJsHpNNihXT2UEoacX/Pkpf3VOoWT2Jgma6hMmMmhnqlflxhVPjiT1X6P1EHJ3cuAnMwcCZppmeFw89gYc= grishko@MacBook-Pro-Admin.local")  # Replace with the path to your public key file
+ #public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_instance" "example" {
